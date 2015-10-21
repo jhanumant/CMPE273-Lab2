@@ -7,15 +7,15 @@ Routing example using HTTPRouter .
 Use HttpRouter to route URL's to appropriate destination
 ### Install
 
-If the package("github.com/julienschmidt/httprouter") is not installed go to this file's folder and do
+If the package("github.com/julienschmidt/httprouter") is not installed, go to this file's folder and do
 ```
 go get 
 ```
-go build
 ```
+go build
 
+```
 Start the  server:
-
 ```
 go run httpPostRouter.go
 ```
@@ -24,6 +24,7 @@ go run httpPostRouter.go
 ```
 curl -X POST -d "{\"name\":\"Hanumant\"}" http://localhost:8088/hello
 ```
+```
 Response:
 {"greeting":"Hello,Hanumant!"}
 ```
@@ -31,7 +32,6 @@ Response:
 ```
 curl http://localhost:8088/hello/Hanu
 ```
-
 ```
 Response:
 
