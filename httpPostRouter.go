@@ -15,7 +15,7 @@ func PostHello(rw http.ResponseWriter, req *http.Request, p httprouter.Params) {
     err:=json.NewDecoder(req.Body).Decode(&data)
     name:=data["name"]
     if(err==nil){
-        response.Greeting ="Hello,"+ name.(string)+"!"
+        response.Greeting ="Hello, "+ name.(string)+"!"
         rw.Header().Set("Content-Type", "application/json; charset=UTF-8")
         result,err:=json.Marshal(response)
         if(err!=nil){
