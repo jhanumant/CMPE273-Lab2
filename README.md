@@ -26,7 +26,7 @@ curl -X POST -d "{\"name\":\"Hanumant\"}" http://localhost:8088/hello
 ```
 ```
 Response:
-{"greeting":"Hello,Hanumant!"}
+{"greeting":"Hello, Hanumant!"}
 ```
 ### Make GET calls From Client to the URL using cURL
 ```
